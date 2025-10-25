@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Image Example (Internal CSS)</title>
+
+  <style>
+    body {
+      background-color: #f0f0f0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      width: 300px;
+      border: 3px solid #333;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    /* Hover effect */
+    img:hover {
+      transform: scale(1.05);
+      border-color: #007bff;
+    }
+
+    p {
+      color: #555;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Homepage</h1>
+  <p>Click the image below to go to the next page:</p>
+
+  <!-- Clickable image linking to another page -->
+    <<a href="https://www.w3schools.com" target="_blank">
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools Logo">
+  </a>>
+  
+
+  <p>When you click the image, it will open <strong>page2.html</strong>.</p>
+
+</body>
+</html>
+
+
