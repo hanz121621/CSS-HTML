@@ -3,51 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alt Attribute Example</title>
+  <title>Simple Table Example</title>
 
   <style>
     body {
-      background-color: #f5f5f5;
       font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
       text-align: center;
-      color: #333;
       margin-top: 50px;
     }
 
-    h1 {
-      color: #0066cc;
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 60%;
     }
 
-    img {
-      width: 300px;
-      height: auto;
+    th, td {
       border: 2px solid #333;
-      border-radius: 10px;
-      margin-top: 20px;
+      padding: 10px;
     }
 
-    p {
-      max-width: 600px;
-      margin: 20px auto;
-      line-height: 1.6;
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e9f2ff;
+    }
+
+    tr:hover {
+      background-color: #d0e7ff;
     }
   </style>
 </head>
 <body>
 
-  <h1>Example: Using the <code>alt</code> Attribute</h1>
+  <h1>Student Information Table</h1>
 
-  <p>The <strong>alt</strong> attribute provides alternative text for an image. 
-  It helps users who cannot see the image and also appears when the image fails to load.</p>
-
-  <!-- Image with alt attribute -->
-  <img src="flower.jpg" alt="A beautiful red flower with green leaves">
-
-  <p>
-    ✅ If the image loads, you’ll see a flower.<br>
-    ❌ If the image doesn’t load, you’ll see the text: 
-    <em>“A beautiful red flower with green leaves.”</em>
-  </p>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Hana Nigusse</td>
+      <td>21</td>
+      <td>hana@example.com</td>
+    </tr>
+    <tr>
+      <td>Abel Tesfaye</td>
+      <td>22</td>
+      <td>abel@example.com</td>
+    </tr>
+    <tr>
+      <td>Selam Dawit</td>
+      <td>20</td>
+      <td>selam@example.com</td>
+    </tr>
+  </table>
 
 </body>
 </html>
